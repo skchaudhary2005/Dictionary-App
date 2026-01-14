@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 15px;
+}
+
+/* Main container */
+.container {
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 380px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* Search box */
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 15px;
+    background: #4caf50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #43a047;
+}
+
+/* Result section */
+.result {
+    margin-top: 20px;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+
+.result h3 {
+    margin-bottom: 8px;
+}
+
+.audio-btn {
+    margin-top: 10px;
+    background: #2196f3;
+}
+
+/* -------------------- */
+/* 📱 Mobile Devices */
+/* -------------------- */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* -------------------- */
+/* 📱 Tablets */
+/* -------------------- */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        max-width: 420px;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+}
+
+/* -------------------- */
+/* 💻 Large Screens */
+/* -------------------- */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 420px;
+    }
+}
